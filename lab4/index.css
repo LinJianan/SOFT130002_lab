@@ -1,0 +1,34 @@
+.navbar-brand{
+    padding: 6px 6px;
+}
+footer{
+    background-color: #333333;
+}
+.row{
+    margin-top: 30px;
+    margin-left: 110px;
+}
+.copyright{
+    color: white;
+    text-align: center;
+}
+footer a{
+    color: white;
+}
+.firstpart{
+    margin-left: 4.1%;
+    margin-top: 100px;
+    width: 25%;
+    height: 800px;
+    margin-right: 4%;
+    background: #c7cacc;
+    clear:both;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.firstpart ul{
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+}
