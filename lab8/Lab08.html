@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Lab08</title>
+    <link rel="stylesheet" href="Lab08.css">
+</head>
+<body>
+<div id="bd" align="center">
+    <div class="container" onmouseover="blank()" onmouseout="auto_cycle()">
+        <div class="wrap" style="left: 0px">
+            <img id="m" src="1.jpg" style="display:block">
+        </div>
+        <div class="buttons">
+            <span class="on" id="b1" onclick="select_img(1)">1</span>
+            <span id="b2" onclick="select_img(2)">2</span>
+            <span id="b3" onclick="select_img(3)">3</span>
+            <span id="b4" onclick="select_img(4)">4</span>
+            <span id="b5" onclick="select_img(5)">5</span>
+        </div>
+        <a href="javascript:" class="arrow arrow_left" id="prev" onclick="press_prev()">&lt;</a>
+        <a href="javascript:" class="arrow arrow_right" id="next" onclick="press_next()">&gt;</a>
+    </div>
+    <table id="tab" border="1" width=500px>
+        <tr>
+            <th>景区</th>
+            <th>省份</th>
+            <th>热度</th>
+        </tr>
+        <tr>
+            <td>黄山</td>
+            <td>安徽</td>
+            <td>4.8</td>
+        </tr>
+        <tr>
+            <td>天安门</td>
+            <td>北京</td>
+            <td>4.5</td>
+        </tr>
+        <tr>
+            <td>白云山</td>
+            <td>广东</td>
+            <td>4.2</td>
+        </tr>
+        <tr>
+            <td>故宫</td>
+            <td>北京</td>
+            <td>4.1</td>
+        </tr>
+    </table>
+</div>
+<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+<script src="Lab08.js"></script>
+</body>
+</html>
