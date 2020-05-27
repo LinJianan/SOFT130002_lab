@@ -41,7 +41,25 @@
 //echo date("l, F jS, Y H:i:s") . "<br>"
 
 //Q10
-$remaining = 365 - date("z") + 1;
+//$remaining = 365 - date("z") + 1;
+//echo "There are ". $remaining . " days left in the year";
+    
+//Q11
+$Y = date("Y");
+$z = date("z");
+$remaining = 0;
+if ($Y % 400 == 0) {
+    $remaining = 366 - $z;
+}
+elseif ($Y % 100 == 0) {
+    $remaining = 365 - $z;
+}
+elseif ($Y % 4 == 0) {
+    $remaining = 366 - $z;
+}
+else {
+    $remaining = 365 - $z;
+}
 echo "There are ". $remaining . " days left in the year";
 
 ?>
